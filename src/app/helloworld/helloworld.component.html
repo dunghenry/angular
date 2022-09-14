@@ -1,0 +1,13 @@
+<h1 style="border: 1px solid gray;" [id]="myId" [style.color]="fontColor">{{msg}}</h1>
+<button [disabled]="isDisable" (click)="handleClick()">Click me!</button>
+<h2>{{msg}}</h2>
+<div *ngIf="isEdit; else noEdit">
+  <p>You can edit the following paragraph.</p>
+</div>
+<ng-template #noEdit>
+  <p>The following paragraph is read only. Try clicking the button!</p>
+</ng-template>
+<p [contentEditable]="isEdit">{{ msg }}</p>
+<button (click)="handleEdit()">Edit</button>
+
+<button (click)="onLog()">Log</button>
