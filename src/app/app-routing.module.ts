@@ -1,3 +1,5 @@
+import { TodoComponent } from './todo/todo.component';
+import { PostComponent } from './post/post.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HelloworldComponent } from './helloworld/helloworld.component';
@@ -8,6 +10,14 @@ const routes: Routes = [
   {
     path: 'helloworld',
     component: HelloworldComponent,
+  },
+  {
+    path: 'post',
+    component: PostComponent,
+  },
+  {
+    path: 'todo',
+    component: TodoComponent,
   },
   {
     path: '',

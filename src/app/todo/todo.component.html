@@ -1,0 +1,23 @@
+<h1>Todo works!</h1>
+<form (ngSubmit)="onSubmit($event)">
+    <div>
+        <div>
+            <label>Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" (change)="changeTitle($event)" required name="title" [(ngModel)]="title" />
+        </div>
+        <br>
+        <div>
+            <label>Description:</label>
+            <input type="text" (change)="changeDescription($event)" required name="description"
+                [(ngModel)]="description" />
+        </div>
+        <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</form>
+<div *ngFor="let todo of todos">
+    <h2>{{todo.title}}</h2>
+    <button (click)="delete(todo._id)">Delete</button>
+</div>
