@@ -9,5 +9,5 @@
 
 #### GET ALL TODO
 ```js
-https://express-mongodb-todos.herokuapp.com/api/v1/todos
+https://api-todos-0ylw.onrender.com/api/v1/todos
 ```

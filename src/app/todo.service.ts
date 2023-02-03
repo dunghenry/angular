@@ -10,19 +10,19 @@ export class TodoService {
   getTodos(): Observable<ITodo[]> {
     return this.http.get<
       ITodo[]
-    >(`https://express-mongodb-todos.herokuapp.com/api/v1/todos
+    >(`https://api-todos-0ylw.onrender.com/api/v1/todos
 `);
   }
   addTodo(data: ITodoBody): Observable<ITodo> {
     return this.http.post<ITodo>(
-      `https://express-mongodb-todos.herokuapp.com/api/v1/todos
+      `https://api-todos-0ylw.onrender.com/api/v1/todos
 `,
       data
     );
   }
   deleteTodo(id: string) {
     return this.http.delete(
-      `https://express-mongodb-todos.herokuapp.com/api/v1/todos/${id}`
+      `https://api-todos-0ylw.onrender.com/api/v1/todos/${id}`
     );
   }
 }

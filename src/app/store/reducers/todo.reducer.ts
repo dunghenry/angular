@@ -8,7 +8,7 @@ export const initialState = {
 const todoReducer = createReducer(
   initialState,
   on(getTodos, (state: any, action) => {
-    console.log(action.todos);
+    // console.log(action.todos);
     return {
       ...state,
       todos: action.todos,
