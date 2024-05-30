@@ -6,13 +6,13 @@ import { LoggerService } from '../logger.service';
   styleUrls: ['./helloworld.component.css'],
 })
 export class HelloworldComponent implements OnInit {
+  constructor(private logger: LoggerService) {}
   msg: string = 'Hello World Component';
   myId: string = 'myH1';
   fontColor: string = 'blue';
   isDisable: boolean = false;
   isEdit: boolean = false;
   count: number = 0;
-  constructor(private logger: LoggerService) {}
 
   ngOnInit(): void {}
 
