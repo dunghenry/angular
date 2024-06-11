@@ -13,6 +13,7 @@ import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import todoReducer from './store/reducers/todo.reducer';
 import { environment } from 'src/environments/environment';
+import { CommentComponent } from './comment/comment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { environment } from 'src/environments/environment';
     HomeComponent,
     PostComponent,
     TodoComponent,
+    CommentComponent,
   ],
   imports: [
     BrowserModule,
