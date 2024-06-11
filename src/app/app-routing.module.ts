@@ -6,6 +6,7 @@ import { HelloworldComponent } from './helloworld/helloworld.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
+import { CommentComponent } from './comment/comment.component';
 const routes: Routes = [
   {
     path: 'helloworld',
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
+  },
+  {
+    path: 'comment',
+    component: CommentComponent,
   },
   { path: '**', pathMatch: 'full', component: PagenotfoundComponent },
 ];
