@@ -8,9 +8,7 @@ import { ITodo, ITodoBody } from './interfaces/todo';
 export class TodoService {
   constructor(private http: HttpClient) {}
   getTodos(): Observable<ITodo[]> {
-    return this.http.get<
-      ITodo[]
-    >(`https://api-todos-0ylw.onrender.com/api/v1/todos
+    return this.http.get<ITodo[]>(`/api/v1/todos
 `);
   }
   addTodo(data: ITodoBody): Observable<ITodo> {

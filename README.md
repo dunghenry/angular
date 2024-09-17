@@ -1,8 +1,8 @@
-### setup routing ng generate module app-routing --flat --module=app
+### Setup routing ng generate module app-routing --flat --module=app
 
-### generate component ng g component namecomponent
+### Generate component ng g component namecomponent
 
-### generate service ng g service nameservice
+### Generate service ng g service nameservice
 
 ### API
 
@@ -15,6 +15,13 @@ https://api-todos-0ylw.onrender.com/api/v1/todos
 ### RUN PRODUCTION LOCALY
 
 ```js
-http-server dist/angular_full/
+npm i serve -g
+npm run build
+cd dist
+serve ./angular_full/ -s
 
 ```
+
+### Link source code backend
+
+https://github.com/dunghenry/api_todos
